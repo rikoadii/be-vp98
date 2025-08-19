@@ -1,6 +1,6 @@
 <?php
 // Konfigurasi database
-$host = 'localhost';
+$host = 'https://admin.victoryproduction98.com';
 $dbname = 'u967345369_db_98';
 $username = 'u967345369_victoryproduct';
 $password = '.k8cB$@AnBPHBZU';
