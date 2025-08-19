@@ -1,7 +1,7 @@
 <?php
 // Konfigurasi database
 $host = 'localhost'; // atau '127.0.0.1'
-$dbname = 'u967345369_db_98';
+$dbname = 'u967345369_db_v98';
 $username = 'u967345369_victoryproduct';
 $password = '.k8cB$@AnBPHBZU';
 
