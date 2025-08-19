@@ -1,9 +1,9 @@
 <?php
 // Konfigurasi database
 $host = 'localhost';
-$dbname = 'vp98';
-$username = 'root';
-$password = '';
+$dbname = 'u967345369_db_98';
+$username = 'u967345369_victoryproduct';
+$password = '.k8cB$@AnBPHBZU';
 
 // Membuat koneksi MySQLi
 $conn = mysqli_connect($host, $username, $password, $dbname);
@@ -23,4 +23,3 @@ function getConnection() {
     global $conn;
     return $conn;
 }
-?>
