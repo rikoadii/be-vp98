@@ -1,0 +1,11 @@
+# Deny access to PHP files in uploads directory
+<Files "*.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Allow access to image files only
+<FilesMatch "\.(jpg|jpeg|png|webp)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
