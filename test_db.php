@@ -5,9 +5,9 @@ error_reporting(E_ALL);
 
 // ---- GANTI DI SINI SESUAI HPanel > MySQL Databases ----
 $host = 'localhost';   // atau 'localhost'
-$db   = 'u967345369_db_98';
+$db   = 'u967345369_db_v98';
 $user = 'u967345369_victoryproduct';
-$pass = '.k8cB$@AnBPHBZUA@';
+$pass = '.k8cB$@AnBPHBZU';
 $port = 3306;
 // -------------------------------------------------------
 
