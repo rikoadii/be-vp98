@@ -4,10 +4,10 @@ ini_set('display_startup_errors',1);
 error_reporting(E_ALL);
 
 // ---- GANTI DI SINI SESUAI HPanel > MySQL Databases ----
-$host = '127.0.0.1';   // atau 'localhost'
+$host = 'localhost';   // atau 'localhost'
 $db   = 'u967345369_db_98';
 $user = 'u967345369_victoryproduct';
-$pass = '.k8cB$@AnBPHBZU';
+$pass = '.k8cB$@AnBPHBZUA@';
 $port = 3306;
 // -------------------------------------------------------
 
