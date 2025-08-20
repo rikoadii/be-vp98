@@ -220,7 +220,7 @@ include 'components/topbar.php';
                                         <td class="px-6 py-4"><?= htmlspecialchars($row['name']) ?></td>
                                         <td class="px-6 py-4">
                                             <?php if ($row['profile']): ?>
-                                                <img src="uploads/teams<?= htmlspecialchars($row['profile']) ?>" 
+                                                <img src="uploads/teams/<?= htmlspecialchars($row['profile']) ?>" 
                                                      alt="Profile" 
                                                      class="w-12 h-12 object-cover rounded-full border border-gray-300 cursor-pointer hover:opacity-80 transition-opacity" 
                                                      onclick="showImageModal('uploads/<?= htmlspecialchars($row['profile']) ?>', '<?= htmlspecialchars($row['name']) ?>')">
