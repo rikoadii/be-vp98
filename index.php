@@ -25,6 +25,11 @@ $categories_query = "SELECT COUNT(*) as total FROM categories";
 $categories_result = mysqli_query($conn, $categories_query);
 $stats['categories'] = mysqli_fetch_assoc($categories_result)['total'];
 
+// Count projects
+$projects_query = "SELECT COUNT(*) as total FROM projects";
+$projects_result = mysqli_query($conn, $projects_query);
+$stats['projects'] = mysqli_fetch_assoc($projects_result)['total'];
+
 // Get recent teams
 $recent_teams_query = "SELECT * FROM teams ORDER BY id DESC LIMIT 5";
 $recent_teams_result = mysqli_query($conn, $recent_teams_query);
@@ -76,7 +81,7 @@ include 'components/topbar.php';
             </div>
             <div class="ml-4">
                 <p class="text-sm font-medium text-gray-600">Projects</p>
-                <p class="text-2xl font-bold text-gray-900">0</p>
+                <p class="text-2xl font-bold text-gray-900"><?= $stats['projects'] ?></p>
             </div>
         </div>
     </div>
