@@ -1,7 +1,7 @@
 <?php
 // Konfigurasi database
-$host = 'localhost';
-$dbname = 'vp98';
+$host = 'localhost'; // atau '127.0.0.1'
+$dbname = 'db_v98';
 $username = 'root';
 $password = '';
 
@@ -15,8 +15,6 @@ if (!$conn) {
 
 // Set charset
 mysqli_set_charset($conn, "utf8");
-
-// echo "Koneksi database berhasil!";
 
 // Fungsi untuk mendapatkan koneksi database
 function getConnection() {
