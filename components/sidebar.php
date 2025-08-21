@@ -32,6 +32,24 @@
                 Categories
             </a>
             
+            <!-- Contact -->
+            <a href="contact.php" class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 <?= basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'bg-blue-50 dark:bg-gray-700 text-blue-600 dark:text-blue-400' : '' ?>">
+                <i class="fas fa-address-book w-5 h-5 mr-3"></i>
+                Contact
+            </a>
+            
+            <!-- Center Image -->
+            <a href="center_image.php" class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 <?= basename($_SERVER['PHP_SELF']) == 'center_image.php' ? 'bg-blue-50 dark:bg-gray-700 text-blue-600 dark:text-blue-400' : '' ?>">
+                <i class="fas fa-image w-5 h-5 mr-3"></i>
+                Center Image
+            </a>
+            
+            <!-- Child Project -->
+            <a href="child_project.php" class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 <?= basename($_SERVER['PHP_SELF']) == 'child_project.php' ? 'bg-blue-50 dark:bg-gray-700 text-blue-600 dark:text-blue-400' : '' ?>">
+                <i class="fas fa-project-diagram w-5 h-5 mr-3"></i>
+                Child Project
+            </a>
+            
             <!-- Profile -->
             <a href="profile.php" class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 <?= basename($_SERVER['PHP_SELF']) == 'profile.php' ? 'bg-blue-50 dark:bg-gray-700 text-blue-600 dark:text-blue-400' : '' ?>">
                 <i class="fas fa-user w-5 h-5 mr-3"></i>
