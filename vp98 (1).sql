@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 23, 2025 at 05:49 AM
+-- Generation Time: Aug 28, 2025 at 03:41 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -142,6 +142,28 @@ INSERT INTO `projects` (`project_id`, `name_projects`, `location_projects`, `des
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `services`
+--
+
+CREATE TABLE `services` (
+  `id` int(11) NOT NULL,
+  `title` text NOT NULL,
+  `subtitle` text NOT NULL,
+  `description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `title`, `subtitle`, `description`) VALUES
+(1, 'Event Consultant', 'Strategi & Konsep Acara yang Terarah', 'Kami membantu merancang konsep acara dari awal termasuk tema, rundown, dan perencanaan teknis untuk memastikan acara Anda berjalan sukses.'),
+(2, 'Production', 'Eksekusi Produksi Profesional', 'Layanan produksi lengkap: panggung, backdrop, lighting, audiovisual, dan kebutuhan teknis lainnya siap mewujudkan acara yang memukau.'),
+(3, 'Design', 'Kreativitas & Inovasi Visual', 'Layanan desain komprehensif mulai dari konsep visual, branding event, hingga desain layout. Menciptakan identitas visual yang menarik dan sesuai dengan tema acara Anda.');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `teams`
 --
 
@@ -223,6 +245,12 @@ ALTER TABLE `projects`
   ADD KEY `idx_id_categories` (`id_categories`);
 
 --
+-- Indexes for table `services`
+--
+ALTER TABLE `services`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `teams`
 --
 ALTER TABLE `teams`
@@ -268,6 +296,12 @@ ALTER TABLE `contact`
 --
 ALTER TABLE `projects`
   MODIFY `project_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `services`
+--
+ALTER TABLE `services`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `teams`

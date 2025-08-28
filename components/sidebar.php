@@ -32,6 +32,12 @@
                 Categories
             </a>
             
+            <!-- Services -->
+            <a href="services.php" class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 <?= basename($_SERVER['PHP_SELF']) == 'categories.php' ? 'bg-blue-50 dark:bg-gray-700 text-blue-600 dark:text-blue-400' : '' ?>">
+                <i class="fa-solid fa-gears w-5 h-5 mr-3"></i>
+                Services
+            </a>
+            
             <!-- Contact -->
             <a href="contact.php" class="flex items-center px-4 py-2 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 <?= basename($_SERVER['PHP_SELF']) == 'contact.php' ? 'bg-blue-50 dark:bg-gray-700 text-blue-600 dark:text-blue-400' : '' ?>">
                 <i class="fas fa-address-book w-5 h-5 mr-3"></i>
